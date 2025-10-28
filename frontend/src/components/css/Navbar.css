@@ -1,0 +1,101 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+
+.navbar-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+  background: none;
+  padding: 8px 12px;
+}
+
+.navbar-link:hover {
+  color: var(--primary);
+}
+
+.navbar-link.active {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+}
+
+.admin-link {
+  background-color: var(--secondary);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.admin-link:hover {
+  background-color: var(--secondary-dark);
+  color: white !important;
+}
+
+.cart-link {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: var(--accent);
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.register-btn {
+  background-color: var(--primary);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.register-btn:hover {
+  background-color: var(--primary-dark);
+}
+
+.logout-btn {
+  color: var(--error) !important;
+}
+
+.user-greeting {
+  color: #666;
+  font-size: 14px;
+}

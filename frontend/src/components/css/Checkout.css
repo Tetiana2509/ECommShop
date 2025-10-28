@@ -1,0 +1,129 @@
+.checkout-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.checkout-container h1 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.checkout-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.order-summary {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.order-summary h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.summary-items {
+  margin-bottom: 20px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 2px solid #ddd;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.shipping-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.shipping-form h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.checkout-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.back-to-cart-btn {
+  flex: 1;
+  background-color: #6c757d;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+}
+
+.back-to-cart-btn:hover {
+  background-color: #5a6268;
+}
+
+.place-order-btn {
+  flex: 2;
+  background-color: var(--success);
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.place-order-btn:hover:not(:disabled) {
+  background-color: #059669;
+}
+
+.empty-checkout {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.empty-checkout h2 {
+  margin-bottom: 16px;
+}
+
+.empty-checkout p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.empty-checkout button {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px 30px;
+}
+
+.empty-checkout button:hover {
+  background-color: var(--primary-dark);
+}
+
+@media (max-width: 768px) {
+  .checkout-content {
+    grid-template-columns: 1fr;
+  }
+}
